@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en-CA">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="robots" content="noindex, nofollow, noai, noimageai" />
+<title>Record · Access Lab</title>
+<meta name="description" content="The Tuesday log, the ledger check and the question: the part of Access Lab that cannot be reconstructed later." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <div class="wrap">
+
+    <nav class="topbar" aria-label="Access Lab">
+      <a class="mark" href="index.html">Access&nbsp;Lab</a>
+      <div class="navlinks">
+        <a href="ceiling.html">Ceiling</a>
+        <a href="calendar.html">Calendar</a>
+        <a href="year.html">The Year</a>
+        <a href="record.html" aria-current="page">Record</a>
+        <a href="cpacc.html">CPACC</a>
+        <a href="corpus.html">The Corpus</a>
+        <a href="leeds.html">Leeds</a>
+        <a href="role.html">The Role</a>
+        <a href="contribute.html">Contribute</a>
+      </div>
+    </nav>
+
+    <main id="main">
+    <header class="hero">
+      <p class="eyebrow"><span>Record</span><span class="status">Opened 22 September 2026</span></p>
+      <h1>The only part <em>that cannot be done late</em></h1>
+      <p class="lede">Everything else in Access Lab can be caught up. The record cannot. It is also the clean-room evidence that each resource was made on my own time, with my own equipment, from public sources, which is what keeps it mine to give away.</p>
+    </header>
+
+    <p class="privacy"><strong>Where the record actually lives.</strong> The canonical record is <code>access-lab-record.md</code> in this repository, append-only. The log on this page is a scratchpad kept in this browser only: it can be cleared by the browser, and it is not backed up. At the end of each Tuesday, press <em>Copy as Markdown</em> and paste the rows into the file.</p>
+
+    <section class="log" aria-label="Tuesday log">
+      <p class="cards-head" style="margin-top:34px">Tuesday log</p>
+      <form class="log-add tl" id="log-form">
+        <label class="sr-only" for="l-date">Date</label>
+        <input id="l-date" type="date" required />
+        <label class="sr-only" for="l-hours">Hours</label>
+        <input id="l-hours" type="number" min="0" max="12" step="0.5" placeholder="Hours" />
+        <label class="sr-only" for="l-what">What moved</label>
+        <input id="l-what" type="text" placeholder="What moved (or: no session, and why)" required />
+        <label class="sr-only" for="l-ledger">Ledger entry</label>
+        <select id="l-ledger"><option value="">No ledger entry</option><option>Corpus</option><option>Shown</option><option>Funded</option><option>Scholarly</option><option>Relational</option></select>
+        <button class="btn" type="submit">Add</button>
+      </form>
+      <table class="log-table">
+        <thead><tr><th scope="col">Date</th><th scope="col">Hours</th><th scope="col">What moved</th><th scope="col">Ledger</th><th scope="col"><span class="sr-only">Remove</span></th></tr></thead>
+        <tbody id="log-body"></tbody>
+      </table>
+      <div class="log-foot"><span id="log-count"></span><button class="btn" type="button" id="log-export">Copy as Markdown</button></div>
+      <label class="sr-only" for="export-out">Markdown rows</label>
+      <textarea class="export" id="export-out" readonly hidden></textarea>
+    </section>
+
+    <section class="essay">
+      <h2>The five ledgers, this year</h2>
+      <p>Checked at the November review, not before. The question for each is only: <em>did it gain an entry?</em></p>
+    </section>
+    <div class="check" id="ledger-check" style="margin-bottom:40px">
+      <label><input type="checkbox" data-k="corpus"><span><span class="t">Corpus</span><span class="d">One resource published or re-versioned, with a DOI.</span></span></label>
+      <label><input type="checkbox" data-k="shown"><span><span class="t">Shown</span><span class="d">One talk given or one proposal accepted.</span></span></label>
+      <label><input type="checkbox" data-k="funded"><span><span class="t">Funded</span><span class="d">One paid engagement at the specialism's rate.</span></span></label>
+      <label><input type="checkbox" data-k="scholarly"><span><span class="t">Scholarly</span><span class="d">One piece submitted, or one module passed.</span></span></label>
+      <label><input type="checkbox" data-k="relational"><span><span class="t">Relational</span><span class="d">One relationship begun and one kept warm.</span></span></label>
+    </div>
+
+    <section class="essay">
+      <h2>The question</h2>
+      <p>One dated paragraph a year, kept in <code>question.md</code>: <em>what has the work found this year about how learning design decides who is included?</em> Never revise an earlier year. Ten dated versions are a trajectory, and the 2027 version is the spine of the Leeds statement.</p>
+
+      <h2>What else the record holds</h2>
+      <table>
+        <thead><tr><th>File</th><th>Holds</th></tr></thead>
+        <tbody>
+          <tr><td><code>access-lab-record.md</code></td><td>The Tuesday log, the resource log with its clean-room fields, the contributor log, ledger entries, the gates, the named reader, the November review</td></tr>
+          <tr><td><code>question.md</code></td><td>The dated paragraph, one per year</td></tr>
+          <tr><td><code>people.md</code></td><td>The named reader, the second coder, the advisors to talk to, referees, and who was paid what</td></tr>
+          <tr><td><code>identifiers.md</code></td><td>The ORCID iD and every DOI, concept and version</td></tr>
+          <tr><td><code>access-lab-postings.md</code></td><td>Every posting read, with its requirements</td></tr>
+        </tbody>
+      </table>
+      <h2>The rule for contributors</h2>
+      <p>Every disabled contributor, reader or co-author is credited as they wish to be named and paid, with both settled in writing before anything is published. If someone declines payment, the record says they declined; it never says unpaid.</p>
+    </section>
+
+    </main>
+
+    <footer>
+      <span class="copy">© 2026 Andrea Robin · Accessible Learning Labs · a private working reference</span>
+      <div class="fnav">
+        <a href="https://www.accessiblelearninglabs.com/" target="_blank" rel="noopener">accessiblelearninglabs.com</a>
+        <a href="https://accessiblelearninglabs.substack.com/" target="_blank" rel="noopener">Fieldwork</a>
+        <a href="https://github.com/amr0bin/fieldwork" target="_blank" rel="noopener">Fieldwork repository</a>
+        <a href="https://www.andrearobin.com/" target="_blank" rel="noopener">andrearobin.com</a>
+        <a href="https://amr0bin.github.io/studio-day/" target="_blank" rel="noopener">Studio Day</a>
+      </div>
+    </footer>
+
+  </div>
+
+<script>
+(function(){
+  var KEY="access-log", rows=[];
+  try{ rows=JSON.parse(localStorage.getItem(KEY)||"[]"); }catch(e){ rows=[]; }
+  function save(){ try{ localStorage.setItem(KEY, JSON.stringify(rows)); }catch(e){} }
+  var body=document.getElementById("log-body"), count=document.getElementById("log-count");
+  function esc(s){ return String(s==null?"":s).replace(/[&<>"]/g,function(c){return {"&":"&amp;","<":"&lt;",">":"&gt;","\"":"&quot;"}[c];}); }
+  function render(){
+    rows.sort(function(a,b){ return a.date<b.date?1:-1; });
+    body.innerHTML = rows.map(function(r,i){ return '<tr><td>'+esc(r.date)+'</td><td>'+esc(r.hours)+'</td><td>'+esc(r.what)+'</td><td>'+esc(r.ledger||"—")+'</td><td><button class="log-del" type="button" data-i="'+i+'" aria-label="Remove the entry for '+esc(r.date)+'">×</button></td></tr>'; }).join("");
+    count.textContent = rows.length + (rows.length===1?" Tuesday":" Tuesdays") + " logged in this browser";
+  }
+  var d=document.getElementById("l-date"); var now=new Date(); d.value=now.getFullYear()+"-"+("0"+(now.getMonth()+1)).slice(-2)+"-"+("0"+now.getDate()).slice(-2);
+  document.getElementById("log-form").addEventListener("submit",function(ev){
+    ev.preventDefault();
+    rows.push({date:d.value, hours:document.getElementById("l-hours").value, what:document.getElementById("l-what").value.trim(), ledger:document.getElementById("l-ledger").value});
+    save(); render(); document.getElementById("l-what").value=""; document.getElementById("l-hours").value=""; document.getElementById("l-ledger").value="";
+  });
+  body.addEventListener("click",function(ev){ var b=ev.target.closest(".log-del"); if(!b)return; rows.splice(+b.dataset.i,1); save(); render(); });
+  document.getElementById("log-export").addEventListener("click",function(){
+    var out=document.getElementById("export-out");
+    var md=rows.slice().sort(function(a,b){return a.date<b.date?-1:1;}).map(function(r){ return "| "+r.date+" | "+(r.hours||"")+" | | "+String(r.what).replace(/\|/g,"/")+" | "+(r.ledger||"")+" | |"; }).join("\n");
+    out.hidden=false; out.value=md; out.focus(); out.select();
+    try{ navigator.clipboard.writeText(md); }catch(e){}
+  });
+  render();
+
+  var boxes=document.querySelectorAll("#ledger-check input"), store={};
+  try{ store=JSON.parse(localStorage.getItem("access-ledgers-"+now.getFullYear())||"{}"); }catch(e){}
+  Array.prototype.forEach.call(boxes,function(b){ b.checked=!!store[b.dataset.k]; b.addEventListener("change",function(){ store[b.dataset.k]=b.checked; try{ localStorage.setItem("access-ledgers-"+now.getFullYear(),JSON.stringify(store)); }catch(e){} }); });
+})();
+</script>
+</body>
+</html>
